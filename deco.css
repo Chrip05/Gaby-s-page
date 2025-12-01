@@ -1,0 +1,121 @@
+/* Fuente estilo Taylor Swift */
+@import url('https://upload.wikimedia.org/wikipedia/en/7/75/The_Eras_Tour_Poster_%28updated%29.png');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg, #f7d7f7, #c9d7ff);
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #6a2c91;
+}
+
+header p {
+    font-size: 1.3rem;
+    color: #4b2354; max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+
+
+
+/* Partículas brillantes tipo sparkles */
+.sparkles {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    pointer-events: none;
+    background-image: url('https://upload.wikimedia.org/wikipedia/en/7/75/The_Eras_Tour_Poster_%28updated%29.png'); /* textura glitter */
+    opacity: 0.2;
+    animation: sparkleMove 20s linear infinite;
+}
+
+@keyframes sparkleMove {
+    0% { background-position: 0 0; }
+    100% { background-position: 1000px 1000px; }
+}
+
+/* Galería */
+.gallery {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.gallery h2 {
+    font-family: 'Playfair Display';
+    font-size: 2rem;
+    color: #5c1f7a;
+    margin-bottom: 20px;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.photos img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.photos img:hover {
+    transform: scale(1.05);
+}
+
+/* Razones */
+.reasons {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.reasons ol li {
+    margin: 12px 0;
+    font-size: 1.1rem;
+}
+
+/* Taylor Swift quote */
+.ts-section {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #4a1a67;
+    margin-bottom: 50px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #6e1c8f; /* color sólido */
+    font-size: 1.3rem;
+    color: white; /* texto más legible */
+}
+
